@@ -1,0 +1,1 @@
+[12-Dec-2016 17:15:45 UTC] PHP Fatal error:  Class 'Intervention\Image\ImageServiceProvider' not found in /home/river426/public_html/home/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 146

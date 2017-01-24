@@ -1,0 +1,44 @@
+<?php
+
+namespace App\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class NoticiaRequest extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        return true;
+    }
+
+    public function messages()
+    {
+        return [
+
+            'titulo.required' => 'Preencha o titulo da noticia',
+            'conteudo.required' => 'Preencha o conteudo da noticia',
+            //'image.required' => 'Indique a imagem da noticia',
+
+        ];
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        return [
+            'titulo'=>'required | max : 255',
+            'conteudo'=>'required',
+            //'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+
+        ];
+    }
+}
