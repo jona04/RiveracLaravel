@@ -364,7 +364,7 @@
         <div class="container">
             <div class="row row_copyrite">
                 <div class="col-xs-12 text-center">
-                    2016 - River Atletico Clube | Desenvolvido por <a href="http://www.mobilen.com.br" target="_blank">MOBILEN</a>
+                    2017 - River Atletico Clube | Desenvolvido por <a href="http://www.mobilen.com.br" target="_blank">MOBILEN</a> | Agencia Esporte Mais
                 </div>
                 
             </div>

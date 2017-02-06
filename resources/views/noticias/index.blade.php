@@ -20,6 +20,7 @@
                         <thead>
                             <tr>
                                 <th>#</th>
+                                <th>Imagem</th>
                                 <th>Titulo</th>
                                 <th>Data</th>
                                 <th></th>
@@ -31,6 +32,7 @@
                                 class="danger"
                             <?php endif ?> >
                                 <th scope="row">{{ $noticia->id }}</th>
+                                <td><img src="{{ $noticia->image }}" width="100px" /></td>
                                 <td>{{ $noticia->titulo }}</td>
                                 <td>{{ $noticia->created_at }}</td>
                                 <td>

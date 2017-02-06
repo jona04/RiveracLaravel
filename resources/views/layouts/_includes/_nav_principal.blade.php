@@ -52,7 +52,14 @@
                             <span> River TV</span>
                         </a>
                     </li> 
-                    
+                    <!--
+                    <li role="presentation">
+                        <a href="#elenco">
+                          
+                            <span> Elenco</span>
+                        </a>
+                    </li>
+-->
                     <li role="presentation">
                         <a href="#patrocinadores">
                           
@@ -96,7 +103,14 @@
                             <h2> River TV</h2>
                         </a>
                     </li> 
-                    
+                    <!--
+                    <li role="presentation">
+                        <a href="#elenco">
+                          
+                            <h2> Elenco</h2>
+                        </a>
+                    </li> 
+-->
                     <li role="presentation">
                         <a href="#patrocinadores">
                           

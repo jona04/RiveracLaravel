@@ -21,7 +21,8 @@
                     <ul class="nav navbar-nav">
                         @if (!Auth::guest())
                         <li><a href="{{ route('noticia.index') }}">Noticias</a></li>
-                        <li><a href="{{ route('meu_time.index') }}">Meus Times</a></li>
+                        <li><a href="{{ route('meu_time.index') }}">Meu Time</a></li>
+                        <li><a href="{{ route('jogador.index') }}">Jogadores</a></li>
                         <li><a href="{{ route('time.index') }}">Times</a></li>
                         <li><a href="{{ route('estadio.index') }}">Estadios</a></li>
                         <li><a href="{{ route('campeonato.index') }}">Campeonatos</a></li>

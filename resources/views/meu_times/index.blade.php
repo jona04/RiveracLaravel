@@ -20,9 +20,9 @@
                         <thead>
                             <tr>
                                 <th>#</th>
+                                <th>Imagem</th>
                                 <th>Nome</th>
                                 <th>Sigla</th>
-                                <th>Cidade</th>
                                 <th>Estado</th>
                                 <th></th>
                             </tr>
@@ -31,13 +31,13 @@
                             @foreach($meu_times as $meu_time)
                             <tr>
                                 <th scope="row">{{ $meu_time->id }}</th>
+                                <td><img src="{{ $meu_time->image }}" width="60px" /></td>
                                 <td>{{ $meu_time->nome_completo }}</td>
                                 <td>{{ $meu_time->sigla }}</td>
-                                <td>{{ $meu_time->cidade }}</td>
                                 <td>{{ $meu_time->estado }}</td>
                                 <td>
                                     <a class="btn btn-default" href="#">Detalhe</a>
-                                    <a class="btn btn-primary" href="#">Editar</a>
+                                    <a class="btn btn-primary" href="{{ route('meu_time.editar',$meu_time->id) }}">Editar</a>
                                     <a class="btn btn-danger" href="javascript:(confirm('Deletar esse time?') ? window.location.href='#' : false )">Excluir</a>
                                 </td>
                             </tr>

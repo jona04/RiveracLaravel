@@ -49,7 +49,7 @@
                     <ul class="nav nav-tabs nav-justified">
                         
                         <li class="active"><a data-toggle="tab" href="#tab1">Piauiense</a></li>
-                        <li><a data-toggle="tab" href="#tab2">Copa&nbsp;São&nbsp;Paulo</a></li>
+                        <li><a data-toggle="tab" href="#tab2">Copa&nbsp;Nordeste</a></li>
                         <li><a data-toggle="tab" href="#tab3">Série D</a></li>
                     </ul>
 
@@ -73,23 +73,23 @@
                                         
                                         <tr>
                                             <th><strong>1</strong></th>
-                                            <td><strong>River-PI</strong></td>
-                                            <td><strong>0</strong></td>
+                                            <td><strong>Altos</strong></td>
+                                            <td><strong>3</strong></td>
                                         </tr>
                                         <tr>
                                             <th><strong>2</strong></th>
-                                            <td><strong>4 de Julho</strong></td>
-                                            <td><strong>0</strong></td>
+                                            <td><strong>Flamengo-PI</strong></td>
+                                            <td><strong>3</strong></td>
                                         </tr>
                                         <tr>
                                             <th><strong>3</strong></th>
-                                            <td><strong>Altos</strong></td>
-                                            <td><strong>0</strong></td>
+                                            <td><strong>Picos</strong></td>
+                                            <td><strong>1</strong></td>
                                         </tr>
                                         <tr>
                                             <th><strong>4</strong></th>
-                                            <td><strong>Comercial-PI</strong></td>
-                                            <td><strong>0</strong></td>
+                                            <td><strong>River-PI</strong></td>
+                                            <td><strong>1</strong></td>
                                         </tr>
                                         
                                     </tbody>
@@ -102,7 +102,7 @@
 
                         <div id="tab2" class="tab-pane fade">
                             <div class="page-header">
-                                <h3><center><strong>Copa São Paulo</strong></center></h3>
+                                <h3><center><strong>Copa Nordeste</strong></center></h3>
                             </div>
 
                             <div class="panel-body">
@@ -119,32 +119,29 @@
                                         
                                         <tr>
                                             <th><strong>1</strong></th>
-                                            <td><strong>Bragantino</strong></td>
-                                            <td><strong>9</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <th><strong>2</strong></th>
-                                            
-                                            <td><strong>Cruzeiro</strong></td>
-                                            <td><strong>6</strong></td>
-                                        </tr>
-                                        <tr>
-                                            <th><strong>3</strong></th>
-                                            
-                                            <td><strong>União Mogi</strong></td>
+                                            <td><strong>River-PI</strong></td>
                                             <td><strong>3</strong></td>
                                         </tr>
                                         <tr>
+                                            <th><strong>2</strong></th>
+                                            <td><strong>Sport</strong></td>
+                                            <td><strong>3</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <th><strong>3</strong></th>
+                                            <td><strong>Sampaio Corrêa</strong></td>
+                                            <td><strong>0</strong></td>
+                                        </tr>
+                                        <tr>
                                             <th><strong>4</strong></th>
-                                            <td><strong>River-PI</strong></td>
-                                            
+                                            <td><strong>Juazeirense</strong></td>
                                             <td><strong>0</strong></td>
                                         </tr>
                                         
                                     </tbody>
                                 </table>
 
-                                <center><a href="http://globoesporte.globo.com/futebol/Copa-SP-de-futebol-junior/" target="_blank" class="btn btn-danger"><strong>Ver tabela completa</strong></a></center>
+                                <center><a href="http://globoesporte.globo.com/futebol/copa-do-nordeste/" target="_blank" class="btn btn-danger"><strong>Ver tabela completa</strong></a></center>
 
                             </div>
                         </div>
@@ -368,49 +365,18 @@
 
                     <div class="slide-elenco">
 
+                        @foreach($jogadores as $jogador)
                         <div class="slide_elenco text-center">
 
                             <div class="elenco_item">
                                 <a href="#" class="">
-                                    <img src="img/jogadores/Amarildo_volante.jpg" class="center-block img-responsive">
-                                   <span class="nome_jogador">Amarildo</span>
+                                    <img src="{{ $jogador->image }}" class="center-block" height="400px" />
+                                    <span class="nome_jogador">{{ $jogador->nome }}</span>
                                 </a>
                                 
                             </div>
                         </div>
-                        <div class="slide_elenco text-center">
-                            <div class="elenco_item">
-                                <a href="#" class="">
-                                    <img src="img/jogadores/andrezinho_lateral.jpg" class="center-block img-responsive">
-                                    <span class="nome_jogador">Andrezinho</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slide_elenco text-center">
-                            <div class="elenco_item">
-                                <a href="#" class="">
-                                    <img src="img/jogadores/daniel_piaui_atacante.jpg" class="center-block img-responsive">
-                                    <span class="nome_jogador">Daniel Piaui</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slide_elenco text-center">
-                            <div class="elenco_item">
-                                <a href="#" class="">
-                                    <img src="img/jogadores/Diego_Lira_atacante.jpg" class="center-block img-responsive">
-                                    <span class="nome_jogador">Diego Lira</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slide_elenco text-center">
-                            <div class="elenco_item">
-                                <a href="#" class="">
-                                    <img src="img/jogadores/Esquerdinha_meia.jpg" class="center-block img-responsive">
-                                    <span class="nome_jogador">Esquerdinha</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                       @endforeach
 
                 </div>
             </div>

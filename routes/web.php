@@ -17,13 +17,26 @@ Auth::routes();
 
 Route::get('/admin', ['uses'=>'AdminController@index','as'=>'admin.index']);
 
+
 Route::get('/times', ['uses'=>'TimeControler@index','as'=>'time.index']);
 Route::get('/time_add', ['uses'=>'TimeControler@adicionar','as'=>'time.adicionar']);
 Route::post('/time_salvar', ['uses'=>'TimeControler@salvar','as'=>'time.salvar']);
+Route::get('/times/editar/{id}', ['uses'=>'TimeControler@editar','as'=>'time.editar']);
+Route::put('/times/atualizar/{id}', ['uses'=>'TimeControler@atualizar','as'=>'time.atualizar']);
+
+
+Route::get('/jogadores', ['uses'=>'JogadorController@index','as'=>'jogador.index']);
+Route::get('/jogadores_add', ['uses'=>'JogadorController@adicionar','as'=>'jogador.adicionar']);
+Route::post('/jogadores_salvar', ['uses'=>'JogadorController@salvar','as'=>'jogador.salvar']);
+Route::get('/jogadores/editar/{id}', ['uses'=>'JogadorController@editar','as'=>'jogador.editar']);
+Route::put('/jogadores/atualizar/{id}', ['uses'=>'JogadorController@atualizar','as'=>'jogador.atualizar']);
+Route::get('/jogadores/deletar/{id}', ['uses'=>'JogadorController@deletar','as'=>'jogador.deletar']);
 
 Route::get('/meu_times', ['uses'=>'MeuTimeController@index','as'=>'meu_time.index']);
 Route::get('/meu_time_add', ['uses'=>'MeuTimeController@adicionar','as'=>'meu_time.adicionar']);
 Route::post('/meu_time_salvar', ['uses'=>'MeuTimeController@salvar','as'=>'meu_time.salvar']);
+Route::get('/meu_times/editar/{id}', ['uses'=>'MeuTimeController@editar','as'=>'meu_time.editar']);
+Route::put('/meu_times/atualizar/{id}', ['uses'=>'MeuTimeController@atualizar','as'=>'meu_time.atualizar']);
 
 Route::get('/estadios', ['uses'=>'EstadioController@index','as'=>'estadio.index']);
 Route::get('/estadio_add', ['uses'=>'EstadioController@adicionar','as'=>'estadio.adicionar']);

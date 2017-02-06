@@ -20,7 +20,9 @@ class PrincipalController extends Controller
         $noticias1 = \App\Noticia::where('visibilidade','=',1)->limit(4)->orderBy('created_at', 'DESC')->get();
     	$noticias2 = \App\Noticia::where('visibilidade','=',1)->offset(4)->limit(4)->orderBy('created_at', 'DESC')->get();
 
-    	$videos = \App\Video::orderBy('created_at', 'DESC')->get();
+    	$jogadores = \App\Jogador::orderBy('posicao', 'ASC')->get();
+
+        $videos = \App\Video::orderBy('created_at', 'DESC')->get();
     	$video_first = $videos->first();
 
         $dt = new DateTime();
@@ -30,6 +32,6 @@ class PrincipalController extends Controller
 
     	$partida_first = $partidas->first();
 
-        return view('home',compact('times','noticias1','noticias2','videos','video_first','partida_first','noticias_destaques'));
+        return view('home',compact('times','noticias1','noticias2','videos','video_first','partida_first','noticias_destaques','jogadores'));
     }
 }

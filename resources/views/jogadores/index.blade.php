@@ -6,13 +6,13 @@
         <div class="col-md-12">
             <div class="panel panel-default">
                 <ol class="breadcrumb panel-heading">
-                    <li class="active">Partidas</li>
+                    <li class="active">Jogadores</li>
                 </ol>
 
                 <div class="panel-body">
                     
                     <p>
-                        <a class="btn btn-success" href="{{ route('partida.adicionar') }}">Adicionar Partida</a>
+                        <a class="btn btn-success" href="{{ route('jogador.adicionar') }}">Adicionar Jogador</a>
                     </p>
 
                     
@@ -20,25 +20,23 @@
                         <thead>
                             <tr>
                                 <th>#</th>
-                                <th>Adversario</th>
-                                <th>Estadio</th>
-                                <th>Mando de campo</th>
-                                <th>Campeonato</th>
+                                <th>Imagem</th>
+                                <th>Nome</th>
+                                <th>Posicao</th>
                                 <th></th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach($partidas as $partida)
+                            @foreach($jogadores as $jogador)
                             <tr>
-                                <th scope="row">{{ $partida->id }}</th>
-                                <td>{{ $partida->time->primeiro_nome }}</td>
-                                <td>{{ $partida->estadio->nome }}</td>
-                                <td>{{ $partida->mando_de_campo }}</td>
-                                <td>{{ $partida->campeonato->nome }}</td>
+                                <th scope="row">{{ $jogador->id }}</th>
+                                <td><img src="{{ $jogador->image }}" width="60" /></td>
+                                <td>{{ $jogador->nome }}</td>
+                                <td>{{ $jogador->posicao }}</td>
                                 <td>
                                     <a class="btn btn-default" href="#">Detalhe</a>
-                                    <a class="btn btn-primary" href="{{ route('partida.editar',$partida->id) }}">Editar</a>
-                                    <a class="btn btn-danger" href="javascript:(confirm('Deletar esse time?') ? window.location.href='#' : false )">Excluir</a>
+                                    <a class="btn btn-primary" href="{{ route('jogador.editar',$jogador->id) }}">Editar</a>
+                                    <a class="btn btn-danger" href="javascript:(confirm('Deletar esse jogador?') ? window.location.href='{{ route('jogador.deletar',$jogador->id) }}' : false )">Excluir</a>
                                 </td>
                             </tr>
                             @endforeach
@@ -46,7 +44,7 @@
                     </table>
 
                     <div align="center">
-                        {!! $partidas->links() !!}
+                        {!! $jogadores->links() !!}
                     </div>
                 </div>
             </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use File;
 
 class TimeControler extends Controller
 {
@@ -66,5 +67,61 @@ class TimeControler extends Controller
             ]);
 
         return redirect()->route('time.adicionar');
+    }
+
+    public function editar($id)
+    {
+        $time = \App\Time::find($id);
+        if(!$time){
+            \Session::flash('flash_message',[
+                'msg'=>"Não existe esse time cadastrado!",
+                'class'=>"alert-danger"
+            ]);
+            return redirect()->route('time.index',$id);
+        }
+
+        return view('times.editar',compact('time'));
+    }
+
+    public function atualizar(\App\Http\Requests\TimeRequest $request,$id)
+    {
+        $time = \App\Time::find($id);
+        
+        //$user_id = $request->input('user_id');
+        $time->primeiro_nome = $request->input('primeiro_nome');
+        $time->nome_completo = $request->input('nome_completo');
+        $time->sigla = $request->input('sigla');
+        $time->cidade = $request->input('cidade');
+        $time->estado = $request->input('estado');
+        $time->pais = $request->input('pais');
+
+        $image = $request->image;
+        if($image!=""){
+
+            $imagem_atual = $request->input('image_atual');
+            $image_path = public_path()."/".$imagem_atual;
+            if (File::exists($image_path)) {
+                //File::delete($image_path);
+                unlink($image_path);
+            }
+
+            $imageName = time().'.'.$image->getClientOriginalExtension();
+            $request->image->move(public_path('img/times'), $imageName);
+            
+            $local = "img/times/".$imageName;
+
+            $time->image = $local;
+
+        }
+
+        $time->save();
+
+        \Session::flash('flash_message',[
+            'msg'=>"Time atualizada com Sucesso!",
+            'class'=>"alert-success"
+        ]);
+
+        return redirect()->route('time.index',$id);        
+        
     }
 }

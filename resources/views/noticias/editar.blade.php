@@ -49,6 +49,7 @@
                             <div class="col-md-10">
                             <input class="form-control" type="file" id="image" name="image">
                             <p class="help-block">Imagem que ficará visível para a noticia</p>
+                        
                             </div>
                         </div>
 				       
