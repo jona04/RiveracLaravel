@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default">
-                <div class="panel-heading">Cadastro Time</div>
+                <div class="panel-heading">Atualizar Time</div>
                 <div class="panel-body">
                     <form class="form-horizontal" enctype="multipart/form-data" role="form" method="POST" action="{{ route('time.atualizar',$time->id) }}">
                         {{ csrf_field() }}

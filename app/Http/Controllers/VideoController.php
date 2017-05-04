@@ -48,4 +48,47 @@ class VideoController extends Controller
 
         return redirect()->route('video.adicionar');
     }
+
+    public function editar($id)
+    {
+        $video = \App\Video::find($id);
+        if(!$video){
+            \Session::flash('flash_message',[
+                'msg'=>"Não existe esse video cadastrado!",
+                'class'=>"alert-danger"
+            ]);
+            return redirect()->route('video.index',$id);
+        }
+
+        return view('videos.editar',compact('video'));
+    }
+
+    public function atualizar(\App\Http\Requests\VideoRequest $request,$id)
+    {
+        $video = \App\Video::find($id);
+        $video->update($request->all());
+
+        \Session::flash('flash_message',[
+                'msg'=>"Video atualizado com sucesso!",
+                'class'=>"alert-success"
+            ]);
+
+        return redirect()->route('video.index',$video);     
+        
+    }
+
+    public function deletar($id)
+    {
+        $video = \App\Video::find($id);      
+
+        $video->delete();
+
+        \Session::flash('flash_message',[
+            'msg'=>"Video deletado com Sucesso!",
+            'class'=>"alert-success"
+        ]);
+
+        return redirect()->route('video.index'); 
+    }
+
 }

@@ -31,12 +31,12 @@
                 </div>
 
                 <div class="col-md-3">
-                    <div class="page-header"><h2>Marketing</h2></div>
+                    <div class="page-header"><h2>Fornecedores</h2></div>
 
                     <div class="col-md-6 col-sm-3 col-xs-5">
-                        <img class="img-responsive " alt="Logo Esporte Mais" src=" {{asset('img/patrocinio/parceiro_esporte.png')}} ">
+                        <img class="img-responsive " alt="Logo Super Bolla" src=" {{asset('img/patrocinio/forncedor_superbolla.png')}} ">
                     </div>
-                </div>
+            </div>
 
         </div>
 
@@ -68,13 +68,15 @@
                     <img class="img-responsive " alt="Logo Arttintas" src=" {{asset('img/patrocinio/parceiro_art.png')}} ">
                 </div>
             </div>
+
             <div class="col-md-3">
-                    <div class="page-header"><h2>Fornecedores</h2></div>
+                    <div class="page-header"><h2>Marketing</h2></div>
 
                     <div class="col-md-6 col-sm-3 col-xs-5">
-                        <img class="img-responsive " alt="Logo Super Bolla" src=" {{asset('img/patrocinio/forncedor_superbolla.png')}} ">
+                        <img class="img-responsive " alt="Logo Esporte Mais" src=" {{asset('img/patrocinio/parceiro_esporte.png')}} ">
                     </div>
-            </div>
+                </div>
+            
         </div>
 
         <div class="row">
@@ -84,6 +86,10 @@
             <div class="col-md-8 col-xs-12">
                 
                 <div class="col-sm-2 col-xs-5">
+                    <img class="img-responsive " alt="Logo NVS" src=" {{asset('img/patrocinio/base_nvs.png')}} ">
+                </div>
+
+                <div class="col-sm-2 col-xs-5">
                     <img class="img-responsive " alt="Logo unimed" src=" {{asset('img/patrocinio/base_hotsat.png')}} ">
                 </div>
 
@@ -91,13 +97,10 @@
                     <img class="img-responsive " alt="Logo unimed" src=" {{asset('img/patrocinio/base_labor.png')}} ">
                 </div>
 
-<div class="col-sm-2 col-xs-5">
-                    
-                </div>
-
                 <div class="col-sm-2 col-xs-5">
-                    <img class="img-responsive " alt="Logo Modelo" src=" {{asset('img/patrocinio/base_marcos.png')}} ">
+                    <img class="img-responsive " alt="Logo Total" src=" {{asset('img/patrocinio/base_total.png')}} ">
                 </div>
+                
 
                 <div class="col-sm-2 col-xs-5">
                     <img class="img-responsive " alt="Logo unimed" src=" {{asset('img/patrocinio/base_centro.png')}} ">
@@ -107,10 +110,10 @@
                     <img class="img-responsive " alt="Logo Modelo" src=" {{asset('img/patrocinio/base_stalker.png')}} ">
                 </div>
 
-                <div class="col-sm-2 col-xs-5">
-                    <img class="img-responsive " alt="Logo Arttintas" src=" {{asset('img/patrocinio/base_picanharia.png')}} ">
-                </div>
                 
+                
+                
+
             </div>
 
 
@@ -123,6 +126,11 @@
                 <div class="col-sm-4 col-xs-5">
                     <img class="img-responsive " alt="Logo unimed" src=" {{asset('img/patrocinio/base_marketing.png')}} ">
                 </div>
+
+                <div class="col-sm-2 col-xs-5">
+                    <img class="img-responsive " alt="Logo Arttintas" src=" {{asset('img/patrocinio/base_picanharia.png')}} ">
+                </div>
+                
                 
             </div>
 
@@ -162,12 +170,12 @@
                 </div>
 
                 <div class="col-md-3">
-                    <div class="page-header"><h2>Marketing</h2></div>
+                    <div class="page-header"><h2>Fornecedores</h2></div>
 
-                    <div class="col-md-6 col-sm-3">
-                        <img class="img-responsive grayscale2" alt="Logo Esporte Mais" src=" {{asset('img/patrocinio/parceiro_esporte.png')}} ">
+                    <div class="col-md-6 col-sm-3 col-xs-5">
+                        <img class="img-responsive grayscale2" alt="Logo Super Bolla" src=" {{asset('img/patrocinio/forncedor_superbolla.png')}} ">
                     </div>
-                </div>
+            </div>
 
         </div>
 
@@ -199,21 +207,27 @@
                     <img class="img-responsive grayscale2" alt="Logo Arttintas" src=" {{asset('img/patrocinio/parceiro_art.png')}} ">
                 </div>
             </div>
-            <div class="col-md-3">
-                    <div class="page-header"><h2>Fornecedores</h2></div>
 
-                    <div class="col-md-6 col-sm-3 col-xs-5">
-                        <img class="img-responsive grayscale2" alt="Logo Super Bolla" src=" {{asset('img/patrocinio/forncedor_superbolla.png')}} ">
+            <div class="col-md-3">
+                    <div class="page-header"><h2>Marketing</h2></div>
+
+                    <div class="col-md-6 col-sm-3">
+                        <img class="img-responsive grayscale2" alt="Logo Esporte Mais" src=" {{asset('img/patrocinio/parceiro_esporte.png')}} ">
                     </div>
-            </div>
+                </div>
+            
         </div>
 
         <div class="row">
             <div class="col-xs-12">
                 <div class="page-header"><h2>Patrocinadores da base</h2></div>
             </div>
-            <div class="col-md-8 col-xs-12">
+            <div class="col-md-10 col-xs-12">
                 
+                <div class="col-sm-2 col-xs-5">
+                    <img class="img-responsive " alt="Logo NVS" src=" {{asset('img/patrocinio/base_nvs.png')}} ">
+                </div>
+
                 <div class="col-sm-2 col-xs-5">
                     <img class="img-responsive grayscale2" alt="Logo unimed" src=" {{asset('img/patrocinio/base_hotsat.png')}} ">
                 </div>
@@ -223,8 +237,8 @@
                 </div>
 
                 <div class="col-sm-2 col-xs-5">
-                    <img class="img-responsive grayscale2" alt="Logo Modelo" src=" {{asset('img/patrocinio/base_marcos.png')}} ">
-                </div>
+                        <img class="img-responsive " alt="Logo Total" src=" {{asset('img/patrocinio/base_total.png')}} ">
+                    </div>
 
                 <div class="col-sm-2 col-xs-5">
                     <img class="img-responsive grayscale2" alt="Logo unimed" src=" {{asset('img/patrocinio/base_centro.png')}} ">
@@ -233,27 +247,27 @@
                 <div class="col-sm-2 col-xs-5">
                     <img class="img-responsive grayscale2" alt="Logo Modelo" src=" {{asset('img/patrocinio/base_stalker.png')}} ">
                 </div>
-
-                <div class="col-sm-2 col-xs-5">
-                    <img class="img-responsive grayscale2" alt="Logo Arttintas" src=" {{asset('img/patrocinio/base_picanharia.png')}} ">
-                </div>
+                
                 
             </div>
+            <div class="row">
+                <div class="col-md-10">
+                    
+                    <div class="col-sm-2 col-xs-5">
+                        <img class="img-responsive grayscale2" alt="Logo Arttintas" src=" {{asset('img/patrocinio/base_picanharia.png')}} ">
+                    </div>
+                    
+                    
+                    <div class="col-sm-2 col-xs-5">
+                        <img class="img-responsive grayscale2" alt="Logo unimed" src=" {{asset('img/patrocinio/base_piscinas.png')}} ">
+                    </div>
 
+                    <div class="col-sm-2 col-xs-5">
+                        <img class="img-responsive grayscale2" alt="Logo unimed" src=" {{asset('img/patrocinio/base_marketing.png')}} ">
+                    </div>
 
-            <div class="col-md-4 col-xs-12">
-                
-
-                <div class="col-sm-4 col-xs-5">
-                    <img class="img-responsive grayscale2" alt="Logo unimed" src=" {{asset('img/patrocinio/base_piscinas.png')}} ">
                 </div>
-
-                <div class="col-sm-4 col-xs-5">
-                    <img class="img-responsive grayscale2" alt="Logo unimed" src=" {{asset('img/patrocinio/base_marketing.png')}} ">
-                </div>
-                
             </div>
-
 
 
         </div>
@@ -364,7 +378,7 @@
         <div class="container">
             <div class="row row_copyrite">
                 <div class="col-xs-12 text-center">
-                    2017 - River Atletico Clube | Desenvolvido por <a href="http://www.mobilen.com.br" target="_blank">MOBILEN</a> | Agencia Esporte Mais
+                    2017 - River Atletico Clube | Desenvolvido por <a href="http://www.mobilen.com.br" target="_blank">MOBILEN</a>
                 </div>
                 
             </div>

@@ -46,12 +46,10 @@ $(function(){
     });
     
     
-    $('.slide-canal-galo').slick({    
-        dots: true,
-      infinite: false,
+    $('.slide-canal-galo').slick({
       speed: 300,
       slidesToShow: 3,
-      slidesToScroll: 1,
+      slidesToScroll: 2,
       responsive: [
         {
           breakpoint: 1024,

@@ -33,8 +33,8 @@
                                 <td>{{ $video->url }}</td>
                                 <td>
                                     <a class="btn btn-default" href="#">Detalhe</a>
-                                    <a class="btn btn-primary" href="#">Editar</a>
-                                    <a class="btn btn-danger" href="javascript:(confirm('Deletar esse time?') ? window.location.href='#' : false )">Excluir</a>
+                                    <a class="btn btn-primary" href="{{ route('video.editar',$video->id) }}">Editar</a>
+                                    <a class="btn btn-danger" href="javascript:(confirm('Deletar esse video?') ? window.location.href='{{ route('video.deletar',$video->id) }}' : false )">Excluir</a>
                                 </td>
                             </tr>
                             @endforeach

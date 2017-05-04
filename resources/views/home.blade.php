@@ -61,7 +61,7 @@
 
                             <div class="panel-body">
                               
-                              <table class="table table-striped">
+                              <!--<table class="table table-striped">
                                     <thead>
                                         <tr>
                                             <th>POS</th>
@@ -73,27 +73,27 @@
                                         
                                         <tr>
                                             <th><strong>1</strong></th>
-                                            <td><strong>Altos</strong></td>
-                                            <td><strong>3</strong></td>
+                                            <td><strong>Flamengo-PI</strong></td>
+                                            <td><strong>10</strong></td>
                                         </tr>
                                         <tr>
                                             <th><strong>2</strong></th>
-                                            <td><strong>Flamengo-PI</strong></td>
-                                            <td><strong>3</strong></td>
+                                            <td><strong>Altos</strong></td>
+                                            <td><strong>10</strong></td>
                                         </tr>
                                         <tr>
                                             <th><strong>3</strong></th>
-                                            <td><strong>Picos</strong></td>
-                                            <td><strong>1</strong></td>
+                                            <td><strong>River-PI</strong></td>
+                                            <td><strong>9</strong></td>
                                         </tr>
                                         <tr>
-                                            <th><strong>4</strong></th>
-                                            <td><strong>River-PI</strong></td>
-                                            <td><strong>1</strong></td>
+                                            <th><strong>5</strong></th>
+                                            <td><strong>4 de Julho</strong></td>
+                                            <td><strong>7</strong></td>
                                         </tr>
                                         
                                     </tbody>
-                                </table>
+                                </table>-->
                                
                                 <center><a href="http://globoesporte.globo.com/pi/futebol/campeonato-piauiense/" target="_blank" class="btn btn-danger"><strong>Ver tabela completa</strong></a></center>
 
@@ -107,7 +107,7 @@
 
                             <div class="panel-body">
                               
-                                <table class="table table-striped">
+                                <!--<table class="table table-striped">
                                     <thead>
                                         <tr>
                                             <th>POS</th>
@@ -119,27 +119,27 @@
                                         
                                         <tr>
                                             <th><strong>1</strong></th>
-                                            <td><strong>River-PI</strong></td>
-                                            <td><strong>3</strong></td>
+                                            <td><strong>Sport</strong></td>
+                                            <td><strong>10</strong></td>
                                         </tr>
                                         <tr>
                                             <th><strong>2</strong></th>
-                                            <td><strong>Sport</strong></td>
-                                            <td><strong>3</strong></td>
+                                            <td><strong>River-PI</strong></td>
+                                            <td><strong>7</strong></td>
                                         </tr>
                                         <tr>
                                             <th><strong>3</strong></th>
                                             <td><strong>Sampaio Corrêa</strong></td>
-                                            <td><strong>0</strong></td>
+                                            <td><strong>3</strong></td>
                                         </tr>
                                         <tr>
                                             <th><strong>4</strong></th>
                                             <td><strong>Juazeirense</strong></td>
-                                            <td><strong>0</strong></td>
+                                            <td><strong>3</strong></td>
                                         </tr>
                                         
                                     </tbody>
-                                </table>
+                                </table>-->
 
                                 <center><a href="http://globoesporte.globo.com/futebol/copa-do-nordeste/" target="_blank" class="btn btn-danger"><strong>Ver tabela completa</strong></a></center>
 

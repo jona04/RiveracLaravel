@@ -114,7 +114,7 @@
                             <label for="dia" class="col-md-4 control-label">Dia</label>
 
                             <div class="col-md-3">
-                                <input id="dia" type="text" class="form-control" name="dia" value="{{ old('dia') }}" required autofocus>
+                                <input id="dia" type="text" class="form-control" name="dia" value="{{ old('dia') }}" placeholder="DD-MM-AAAA" required autofocus>
                                 @if($errors->has('dia'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('dia') }}</strong>
@@ -126,7 +126,7 @@
                             <label for="hora" class="col-md-4 control-label">Hora</label>
 
                             <div class="col-md-3">
-                                <input id="hora" type="text" class="form-control" name="hora" value="{{ old('hora') }}" required autofocus>
+                                <input id="hora" type="text" class="form-control" name="hora" value="{{ old('hora') }}" placeholder="HH:MM" required autofocus>
                                 @if($errors->has('hora'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('hora') }}</strong>

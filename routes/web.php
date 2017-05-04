@@ -59,7 +59,9 @@ Route::put('/partidas/atualizar/{id}', ['uses'=>'PartidaController@atualizar','a
 Route::get('/videos', ['uses'=>'VideoController@index','as'=>'video.index']);
 Route::get('/videos_add', ['uses'=>'VideoController@adicionar','as'=>'video.adicionar']);
 Route::post('/videos_salvar', ['uses'=>'VideoController@salvar','as'=>'video.salvar']);
-
+Route::get('/videos/editar/{id}', ['uses'=>'VideoController@editar','as'=>'video.editar']);
+Route::put('/videos/atualizar/{id}', ['uses'=>'VideoController@atualizar','as'=>'video.atualizar']);
+Route::get('/videos/deletar/{id}', ['uses'=>'VideoController@deletar','as'=>'video.deletar']);
 
 Route::get('/noticias', ['uses'=>'NoticiaController@index','as'=>'noticia.index']);
 Route::get('/noticia_add', ['uses'=>'NoticiaController@adicionar','as'=>'noticia.adicionar']);

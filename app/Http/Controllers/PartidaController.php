@@ -15,7 +15,7 @@ class PartidaController extends Controller
     public function index()
 	{
 
-		$partidas = \App\Partida::paginate(10);
+		$partidas = \App\Partida::orderBy('data', 'DESC')->paginate(10);
 
 		return view ('partidas.index',compact('partidas'));
 	}

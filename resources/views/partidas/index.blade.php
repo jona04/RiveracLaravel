@@ -22,7 +22,7 @@
                                 <th>#</th>
                                 <th>Adversario</th>
                                 <th>Estadio</th>
-                                <th>Mando de campo</th>
+                                <th>Data</th>
                                 <th>Campeonato</th>
                                 <th></th>
                             </tr>
@@ -33,7 +33,7 @@
                                 <th scope="row">{{ $partida->id }}</th>
                                 <td>{{ $partida->time->primeiro_nome }}</td>
                                 <td>{{ $partida->estadio->nome }}</td>
-                                <td>{{ $partida->mando_de_campo }}</td>
+                                <td>{{ $partida->data }}</td>
                                 <td>{{ $partida->campeonato->nome }}</td>
                                 <td>
                                     <a class="btn btn-default" href="#">Detalhe</a>
